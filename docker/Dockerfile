@@ -3,7 +3,7 @@ RUN apk --no-cache add git
 
 RUN git clone https://github.com/heywoodlh/urlscan-py /opt/urlscan-py
 
-FROM alpine:latest
+FROM alpine:3.18.3
 LABEL maintainer=heywoodlh
 
 # Copy cloned dir from builder
